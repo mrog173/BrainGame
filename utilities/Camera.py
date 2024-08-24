@@ -11,12 +11,12 @@ class Camera:
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
         self.flip = flip
+        self.capture = True
 
         self.processing_thread = threading.Thread(target=self._read_thread)
         self.processing_thread.daemon = True  # Make thread a daemon so it exits when the main program does
         self.processing_thread.start()
 
-        self.capture = True
         #self.BGR_frame = queue.Queue(maxsize=1)
         self.RGB_frame = queue.Queue(maxsize=1)
 
@@ -35,3 +35,6 @@ class Camera:
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frame.flags.writeable = False
             self.RGB_frame.put(frame)
+
+    def release(self):
+        return self.cap.release()

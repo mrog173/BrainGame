@@ -1,0 +1,38 @@
+{
+    "Pose": [
+        {
+            "name": "Mitchell",
+            "score": 1
+        },
+        {
+            "name": "Shah",
+            "score": 1
+        },
+        {
+            "name": null,
+            "score": 0
+        }
+    ],
+    "Segmentation": [
+        {
+            "name": "Mitchell",
+            "score": 4
+        },
+        {
+            "name": "Lisa",
+            "score": 4
+        },
+        {
+            "name": "Ryan",
+            "score": 3
+        },
+        {
+            "name": "wilson",
+            "score": 3
+        },
+        {
+            "name": "",
+            "score": 3
+        }
+    ]
+}
