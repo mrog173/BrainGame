@@ -13,6 +13,7 @@ We use Python and two deep learning libraries:
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Future improvements](#Future-improvements)
 - [License](#license)
 
 ## Installation
@@ -38,11 +39,13 @@ To get started with this project, follow these steps:
    Or download the code by downloading the ZIP file from the [linked repository](https://github.com/WongKinYiu/yolov9/tree/5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff).
 2. **Install the Required Packages**
 
+   You can install the required packages using anaconda:
+
    ```bash
-   pip install -r requirements.txt
+   conda env create -f environment.yml
    ```
 
-## **Usage**
+## Usage
 
 To run the code from the command line, follow these steps:
 
@@ -53,11 +56,18 @@ python BrainGame.py --model_type="Segmentation"
 You can change the model that is used using --model_type="Pose" instead.
 
 Keys that are used:
-- Q/ESC: Close.
-- F: Show/hide FPS counter.
-- L: Go to leaderboard.
-- U: Run an untimed version of the game.
-- S: Run a timed version of the game for the leaderboard.
+
+- **Q/ESC:** Close.
+- **F:** Show/hide FPS counter.
+- **L:** Go to leaderboard.
+- **U:** Run an untimed version of the game.
+- **S:** Run a timed version of the game for the leaderboard.
+
+## Future improvements
+
+Some future ideas for improvements include:
+- **Improving the game maps:** In a future version it would be best to store the shape masks so they can be randomly moved around (with horizontal flips). Game maps could also be graded by difficulty so multiple challenging maps to scale the difficulty.
+- **Dealing with multiple users:** Currently this game only uses a single segmentation mask, and a single body pose. This causes problems when multiple people are in frame.
 
 ## License
 

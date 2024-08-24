@@ -15,6 +15,14 @@
     ],
     "Segmentation": [
         {
+            "name": "Justin",
+            "score": 6
+        },
+        {
+            "name": "Mitchell",
+            "score": 5
+        },
+        {
             "name": "Mitchell",
             "score": 4
         },
@@ -24,14 +32,6 @@
         },
         {
             "name": "Ryan",
-            "score": 3
-        },
-        {
-            "name": "wilson",
-            "score": 3
-        },
-        {
-            "name": "",
             "score": 3
         }
     ]
